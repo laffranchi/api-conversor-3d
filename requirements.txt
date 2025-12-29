@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-multipart
+trimesh
+numpy
+pillow
+scikit-learn
+scipy
+networkx
+lxml

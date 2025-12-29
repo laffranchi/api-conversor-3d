@@ -8,9 +8,16 @@ import io
 import base64
 
 app = FastAPI()
+
 @app.get("/")
 def read_root():
     return {"status": "online", "message": "Conversor 3D Operante"}
+
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}
+
+
 
 # Permite que qualquer site (Lovable, etc) acesse sua API
 app.add_middleware(
